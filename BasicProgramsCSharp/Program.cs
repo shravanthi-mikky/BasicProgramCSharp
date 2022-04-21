@@ -29,6 +29,11 @@ while (status)
             Factors prime = new();
             prime.PrimeFactors();
             break;
+        case 5:
+            Console.WriteLine("Finding Quotient and remainder!");
+            QuotientRemainder qr = new();
+            qr.QuotientRemainderFinder();
+            break;
         default:
             break;
     }
