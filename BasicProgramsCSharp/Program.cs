@@ -5,7 +5,7 @@ Console.WriteLine("Do you want to Run the program?");
 bool status = Convert.ToBoolean(Console.ReadLine());
 while (status)
 {
-    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2) leap year\n3) Power of 2\n4) Prime Factors\n5) Finding Quotient and remainder\n6) Swapping numbers");
+    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2) leap year\n3) Power of 2\n4) Prime Factors\n5) Finding Quotient and remainder\n6) Swapping numbers\n7 Vowel or consonent");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -38,6 +38,10 @@ while (status)
             Console.WriteLine("Swapping the numvers!");
             SwapTwoNumbers swap = new();
             swap.Swap();
+            break;
+        case 7:
+            VowelConsonent vc = new();
+            vc.Vowel();
             break;
         default:
             break;
