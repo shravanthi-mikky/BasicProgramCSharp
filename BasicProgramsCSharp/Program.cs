@@ -5,7 +5,7 @@ Console.WriteLine("Do you want to Run the program?");
 bool status = Convert.ToBoolean(Console.ReadLine());
 while (status)
 {
-    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2)leap year\n3 Power of 2\n4 Prime Factors");
+    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2) leap year\n3) Power of 2\n4) Prime Factors\n5) Finding Quotient and remainder\n6) Swapping numbers\n7 Vowel or consonent\n8) Even odd\n9) Biggest of three numbers.\n 10) Nth harmonic value");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -28,6 +28,32 @@ while (status)
             Console.WriteLine("Prime factors!");
             Factors prime = new();
             prime.PrimeFactors();
+            break;
+        case 5:
+            Console.WriteLine("Finding Quotient and remainder!");
+            QuotientRemainder qr = new();
+            qr.QuotientRemainderFinder();
+            break;
+        case 6:
+            Console.WriteLine("Swapping the numvers!");
+            SwapTwoNumbers swap = new();
+            swap.Swap();
+            break;
+        case 7:
+            VowelConsonent vc = new();
+            vc.Vowel();
+            break;
+        case 8:
+            EvenOdd eo = new();
+            eo.EvenOddMethod();
+            break;
+        case 9:
+            BiggestOfThree biggestOfThree = new();
+            biggestOfThree.MaxOfThree();
+            break;
+        case 10:
+            Harmonic harmonic = new();
+            harmonic.HarmonicSeries();
             break;
         default:
             break;
