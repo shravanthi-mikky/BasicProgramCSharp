@@ -5,7 +5,7 @@ Console.WriteLine("Do you want to Run the program?");
 bool status = Convert.ToBoolean(Console.ReadLine());
 while (status)
 {
-    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2) leap year\n3) Power of 2\n4) Prime Factors\n5) Finding Quotient and remainder\n6) Swapping numbers\n7 Vowel or consonent\n8) Even odd");
+    Console.WriteLine("Choose the Program to be executed :\n1)Flip Coin\n2) leap year\n3) Power of 2\n4) Prime Factors\n5) Finding Quotient and remainder\n6) Swapping numbers\n7 Vowel or consonent\n8) Even odd\n9) Biggest of three numbers.");
     int option = Convert.ToInt32(Console.ReadLine());
     switch (option)
     {
@@ -46,6 +46,10 @@ while (status)
         case 8:
             EvenOdd eo = new();
             eo.EvenOddMethod();
+            break;
+        case 9:
+            BiggestOfThree biggestOfThree = new();
+            biggestOfThree.MaxOfThree();
             break;
         default:
             break;
