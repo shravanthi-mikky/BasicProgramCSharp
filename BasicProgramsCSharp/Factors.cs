@@ -13,18 +13,15 @@ namespace BasicProgramsCSharp
             Console.WriteLine("Prime factors of M");
             Console.WriteLine("Enter the value of M : ");
             int M = Convert.ToInt16(Console.ReadLine());
-
-            for (int i = 2; i < M; i++)
+            Console.WriteLine("Prime factors of the number are : ");
+            for (int i = 2; M>1; i++)
             {
-                if(i%2 != 0)
+                while (M % i == 0)
                 {
-                    if(M%i == 0)
-                    {
-                        Console.WriteLine("{0} is prime factor of {1} ", i, M);
-                    }
+                    M /= i;
+                    Console.WriteLine(i);
                 }
             }
-            
         }
     }
 }
