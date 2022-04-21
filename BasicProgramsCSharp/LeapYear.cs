@@ -11,7 +11,7 @@ namespace BasicProgramsCSharp
         public void LeapYearFunction()
         {
             Console.WriteLine("Welcome to Leap Year Computation!");
-            Console.WriteLine("Enter the Year : x");
+            Console.WriteLine("Enter the Year : ");
             int year = Convert.ToInt16(Console.ReadLine());
 
             if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
